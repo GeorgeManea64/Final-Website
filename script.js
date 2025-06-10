@@ -28,18 +28,25 @@ document.querySelectorAll('.open-window').forEach(button => {
     button.addEventListener('click', () => {
         const projectKey = button.getAttribute('data-project');
         popupText.innerHTML = projectInfo[projectKey] || 'No info available.';
+        popup.classList.add('show'); // trigger animation
         popup.style.display = 'block';
     });
 });
 
 // Close popup
 closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
+    popup.classList.remove('show');
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 300); // wait for transition before hiding
 });
 
 // Close popup when clicking outside the content
 window.addEventListener('click', (e) => {
     if (e.target === popup) {
-        popup.style.display = 'none';
+        popup.classList.remove('show');
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 300);
     }
 });
