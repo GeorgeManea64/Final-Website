@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>George Manea - Programming Student and Web Developer</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>About Me</h2>
@@ -34,26 +36,36 @@
         <h2>Portfolio</h2>
 
         <div>
-            <img src="Images/coffeemachine.png" alt="Coffee Machine" width="300">
-            <li><a href="https://georgemanea64.github.io/Coffee-Machine/">Coffee Machine</a></li>
+            <img src="Images/coffeemachine.png" alt="Coffee Machine">
+            <button class="open-window" data-project="coffee">Coffee Machine</button>
         </div>
 
         <div>
-            <img src="Images/flashcards.png" alt="Flashcards" width="300">
-            <li><a href="https://georgemanea64.github.io/Flashcards/">Flashcards</a></li>
+            <img src="Images/flashcards.png" alt="Flashcards">
+            <button class="open-window" data-project="flashcards">Flashcards</button>
         </div>
 
         <div>
-            <img src="Images/virtualpiano.png" alt="Virtual Piano" width="300">
-            <li><a href="https://georgemanea64.github.io/Virtual-Piano/">Virtual Piano</a></li>
+            <img src="Images/virtualpiano.png" alt="Virtual Piano">
+            <button class="open-window" data-project="piano">Virtual Piano</button>
         </div>    
     </section>
+
+    <!-- Popup Window Template -->
+    <div class="window" id="popup-window">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div id="popup-text">
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </div>
 
     <section id="contacts">
         <h2>Contacts</h2>
         <p>Email: Maneageorge935@gmail.com</p>
         <p>Phone: +40 730 432 704</p>
-        <p>Githun: <a href="https://github.com/GeorgeManea64" target="_blank">https://github.com/GeorgeManea64</a></p>
+        <p>Github: <a href="https://github.com/GeorgeManea64" target="_blank">https://github.com/GeorgeManea64</a></p>
     </section>
 
     <footer>
