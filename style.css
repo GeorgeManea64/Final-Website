@@ -23,61 +23,72 @@ header h1 {
     margin-bottom: 10px;
     font-size: 28px;
 }
-
-/* Hamburger icon styling */
-.hamburger-icon {
+/* Hamburger base */
+.hamburger {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    padding: 15px;
-    margin: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     z-index: 1001;
 }
 
-.hamburger-icon span {
-    height: 4px;
-    width: 25px;
-    background: white;
-    margin: 5px 0;
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
     border-radius: 2px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-/* Mobile menu styles */
-.hamburger-menu {
-    display: flex;
-    justify-content: center;
-}
-
+/* Show hamburger on mobile */
 @media (max-width: 768px) {
-    .hamburger-icon {
+    .hamburger {
         display: flex;
     }
 
-    nav.hamburger-menu ul {
+    .navbar {
         display: none;
-        flex-direction: column;
-        background-color: #444;
+    }
+
+    .menu {
+        display: none;
         position: absolute;
         top: 70px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
+        right: 20px;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
         z-index: 1000;
     }
 
-    nav.hamburger-menu ul.active {
-        display: flex;
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
-    nav.hamburger-menu ul li {
-        margin: 10px 0;
+    .menu ul li a {
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #eee;
     }
 
-    nav a {
-        color: white;
-        font-size: 18px;
+    .menu ul li a:hover {
+        background-color: #f2f2f2;
+    }
+
+    .menu.show {
+        display: block;
     }
 }
 

@@ -51,12 +51,11 @@ window.addEventListener('click', (e) => {
     }
 });
 
-const hamburgerIcon = document.getElementById('hamburger-icon');
-const navMenu = document.querySelector('nav ul');
+const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
 
-hamburgerIcon.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    function toggleMenu() {
+        menu.classList.toggle('show');
+    }
 
-    // Animate icon (optional)
-    hamburgerIcon.classList.toggle('open');
-});
+    hamburger.addEventListener('click', toggleMenu);
