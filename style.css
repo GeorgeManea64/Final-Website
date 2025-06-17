@@ -81,30 +81,6 @@ header h1 {
     }
 }
 
-nav ul {
-    height: 50px;
-    width: 1000px;
-    background-color: lightgray;
-    border-radius: 10px;
-    align-items: center;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    gap: 50px;
-    padding: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 section {
     padding: 40px 20px;
     max-width: 1000px;
