@@ -50,3 +50,13 @@ window.addEventListener('click', (e) => {
         }, 300);
     }
 });
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const navMenu = document.querySelector('nav ul');
+
+hamburgerIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+
+    // Animate icon (optional)
+    hamburgerIcon.classList.toggle('open');
+});
