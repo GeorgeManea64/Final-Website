@@ -77,6 +77,18 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 200px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
 #portfolio img {
     width: 500px;
     height: auto;
