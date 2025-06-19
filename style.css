@@ -7,12 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(black, maroon);
+    background: linear-gradient(to top, yellow, orange, darkred, rgb(128, 0, 53), purple, navy);
     color: #000000;
 }
 
 header {
-    background: linear-gradient(to right, red, darkred);
+    background: linear-gradient(to top, maroon, red, orange);
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -26,7 +26,9 @@ header h1 {
 
 nav ul {
     height: 50px;
-    background-color: lightgray;
+    background: linear-gradient(lightgray, gray);
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
     align-items: center;
     list-style: none;
     display: flex;
@@ -51,8 +53,8 @@ section {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    background: linear-gradient(to right, coral, red);
-    border: solid rgb(53, 0, 0) 10px;
+    background: linear-gradient(to right, lightgray, gray);;
+    border: solid rgb(32, 32, 32) 10px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -71,7 +73,7 @@ section {
     display: grid;
     place-items: center;
     margin-bottom: 30px;
-    background-color:rgb(255, 200, 200);
+    background-color: slategray;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -80,6 +82,7 @@ section {
 #portfolio img {
     width: 500px;
     height: auto;
+    border: solid black 5px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -90,7 +93,7 @@ section {
 
 #portfolio a {
     text-decoration: none;
-    color: #2a5298;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -119,7 +122,8 @@ section {
 }
 
 footer {
-    background-color: #982a2a;
+    background: linear-gradient(to left, navy, cyan);
+    border-top: solid black 5px;
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -191,7 +195,7 @@ footer {
 .open-window {
     margin-top: 10px;
     padding: 12px 12px;
-    background-color: hsl(0, 100%, 27%);
+    background-color: dimgray;
     color: white;
     font-size: large;
     border: none;
@@ -201,6 +205,6 @@ footer {
 }
 
 .open-window:hover {
-    background-color: hsl(0, 100%, 27%);
+    background-color: rgb(153, 153, 153);
     transform: scale(1.1);
 }

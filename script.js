@@ -5,18 +5,21 @@ const closeBtn = document.querySelector('.close');
 const projectInfo = {
     coffee: `
         <h3>Coffee Machine</h3>
+        <img src="images/coffeemachine.png" alt="Coffee Machine Project" style="max-width: 100%; border-radius: 10px; margin: 10px 0;">
         <p>This project simulates a coffee machine interface using HTML, CSS, and JavaScript.</p>
         <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
         <p><a href="https://georgemanea64.github.io/Coffee-Machine/" target="_blank">View Project</a></p>
     `,
     flashcards: `
         <h3>Flashcards</h3>
+        <img src="images/flashcards.png" alt="Flashcards Project" style="max-width: 100%; border-radius: 10px; margin: 10px 0;">
         <p>An interactive flashcard app for quick learning and memorization.</p>
         <p><strong>Technologies:</strong> HTML, CSS</p>
         <p><a href="https://georgemanea64.github.io/Flashcards/" target="_blank">View Project</a></p>
     `,
     piano: `
         <h3>Virtual Piano</h3>
+        <img src="images/virtualpiano.png" alt="Virtual Piano Project" style="max-width: 100%; border-radius: 10px; margin: 10px 0;">
         <p>A virtual piano instrument that plays sounds when keys are pressed.</p>
         <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Audio API</p>
         <p><a href="https://georgemanea64.github.io/Virtual-Piano/" target="_blank">View Project</a></p>
