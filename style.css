@@ -300,3 +300,37 @@ footer {
         font-size: 18px;
     }
 }
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Mobile-only styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background: linear-gradient(lightgray, gray);
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
