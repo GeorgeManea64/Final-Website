@@ -208,3 +208,95 @@ footer {
     background-color: rgb(153, 153, 153);
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    section {
+        padding: 20px 10px;
+        margin: 15px;
+        border-width: 5px;
+    }
+
+    #portfolio img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #portfolio div {
+        padding: 20px;
+    }
+
+    .open-window {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .popup-content {
+        width: 95%;
+        padding: 30px 15px;
+        margin: 30% auto;
+    }
+
+    .popup-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .close {
+        top: 5px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+        height: auto;
+        padding: 15px;
+    }
+
+    #contacts p,
+    #contacts a {
+        font-size: 14px;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .open-window {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .popup-content {
+        font-size: 16px;
+    }
+
+    .popup-content h3 {
+        font-size: 18px;
+    }
+}
